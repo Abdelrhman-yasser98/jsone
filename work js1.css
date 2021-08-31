@@ -1,0 +1,122 @@
+body {
+    width: 1000px;
+    font-family: "Kumbh Sans";
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    padding: 100px 0;
+    background-image: linear-gradient(180deg,hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: hsl(238, 29%, 16%)
+}
+body>img {
+    position: absolute;
+    top: 270px;
+    left: 35px;
+    overflow: visible;
+    z-index: 1;
+    width: 124px;
+}
+section {
+    width: 800px;
+    height: 400px;
+    background-color: white;
+    border-radius:10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    overflow: visible;
+}
+section>div {
+    width: 40%;
+    height: 100%;
+    
+}
+.img {
+    background-image: url(images/bg-pattern-desktop.svg), url(images/illustration-woman-online-desktop.svg);
+    background-position: -50px center;
+    background-size: 300px;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: visible;
+}
+
+.cont {
+    display: flex;
+    flex-wrap: wrap;
+    height: 70%;
+    margin-right: 30px;
+    overflow: visible;
+}
+
+h1 {
+    margin: 0;
+}
+.son {
+    border-bottom: 1px solid gray;
+    width: 100%;
+}
+
+.son h3 {
+    font-weight: 400;
+    padding: 0 ;
+    display: flex;
+    justify-content: space-between;
+    transition: all .2s linear;
+}
+h3 img {
+    width: 20px;
+    transition: all .05s linear;
+}
+.son p {
+    display: none;
+    
+}
+.img {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+h3:hover {
+    color: hsl(14, 88%, 65%);
+    font-weight: bold;
+    cursor: pointer;
+}
+.click {
+    color: black !important;
+    font-weight: bold !important;
+}
+.rotate {
+    transform: rotateZ(180deg);
+}
+.appear {
+    display: block !important; 
+    width: 100%;
+    height: 30%;
+}
+@media (max-width: 600px) {
+    body {
+        width: auto;
+        flex-direction: column;
+    }
+    body>img {
+        top: 6%;
+        left: 30%;
+    }
+    section{
+        width: 90%;
+    }
+    .cont {
+        width: 100%;
+        margin-right: 0px;
+        justify-content: space-around;
+    } 
+    .son {
+        
+        width: 90%;
+    }
+}
